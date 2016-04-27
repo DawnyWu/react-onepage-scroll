@@ -4,7 +4,6 @@ import ScrollContainer from '../src/ScrollContainer';
 import ScrollSection from '../src/ScrollSection';
 
 class App extends React.Component {
-
   render() {
     return (
       <ScrollContainer>
@@ -12,7 +11,7 @@ class App extends React.Component {
         <ScrollSection style={{backgroundImage: 'url(http://www.thepetedesign.com/demos/phones.png)',
                                backgroundRepeat: 'no-repeat' }} 
                                pageId={0}>
-          <a href="https://github.com/peachananr/onepage-scroll">
+          <a href="https://github.com/DawnyWu/react-onepage-scroll">
             <img style={{position: 'absolute', top: 0, right: 0, border: 0, zIndex: 999}} src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/>
           </a>
         </ScrollSection>
