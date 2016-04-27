@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-
+var path = require('path');
 /**
  * This is the Webpack configuration file for production.
  */
@@ -7,10 +7,10 @@ module.exports = {
   entry: './src/index',
 
   output: {
-    library: 'ReactLetterAvatar',
+    library: 'ReactOnePageScroll',
     libraryTarget: 'umd',
     path: __dirname + '/dist/',
-    filename: 'react-letter-avatar.js'
+    filename: 'react-onepage-scroll.js'
   },
 
   externals: [{
@@ -45,12 +45,17 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel',
       },
-      { test: /\.css$/, exclude: /\.useable\.css$/, loader: "style!css" },
+      // { test: /\.css$/, exclude: /\.useable\.css$/, loader: "style!css" },
       { test: /\.useable\.css$/, loader: "style/useable!css" },
-      { 
-        test: /\.css$/, 
-        loader: "style-loader!css-loader" 
-      },
+      // { 
+      //   test: /\.css$/, 
+      //   loader: "style-loader!css-loader" 
+      // },
+      // {
+      //   test: /\.css$/,
+      //   loaders: ['style', 'css?modules&importLoaders=1', 'postcss'],
+      //   // include: path.join(__dirname, 'demos/demo0-simple-transition')
+      // },
       {
         test: /\.css$/,
         loaders: ['style', 'css?modules&importLoaders=1', 'postcss'],

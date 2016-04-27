@@ -12,9 +12,9 @@ react-onepage-scroll
 
 # DEMO
 
-在线demo: 
+在线demo: [http://103.253.146.179:3008/](http://103.253.146.179:3008/)
 
-本地:
+本地demo:
 
 ```js
 git clone https://github.com/DawnyWu/react-onepage-scroll.git
