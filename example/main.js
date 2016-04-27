@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScrollContainer from '../src/ScrollContainer';
-import ScrollSection from '../src/ScrollSection';
+import {ScrollSection, ScrollContainer} from '../src';
 
 class App extends React.Component {
   render() {
     return (
       <ScrollContainer>
-        
         <ScrollSection style={{backgroundImage: 'url(http://www.thepetedesign.com/demos/phones.png)',
                                backgroundRepeat: 'no-repeat' }} 
                                pageId={0}>
